@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EEG Group Analysis Dashboard</title>
+    <title>EEG Neurosubtyping infants predicts language development</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.16.1/plotly.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
@@ -1747,11 +1747,23 @@
 
     <div class="container">
         <aside class="sidebar" id="sidebar">
-            <div class="logo">
-                <h2>EEG Analysis</h2>
-                <p>Infant Brain Subtypes</p>
-            </div>
-            
+<div class="logo">
+    <div style="font-size: 2rem; margin-bottom: 10px; display: flex; justify-content: center; gap: 5px;">
+        <span style="opacity: 0.4;">🧠</span>
+        <span style="opacity: 0.7;">🧠</span>
+        <span>🧠</span>
+    </div>
+    <h2>EEG Analysis</h2>
+    <p>Infant Brain Subtypes</p>
+</div>
+            <div style="padding: 15px 0; border-bottom: 1px solid rgba(255,255,255,0.2); margin-bottom: 20px;">
+    <a href="https://doi.org/10.1007/s00702-025-03063-2" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       style="display: block; background: rgba(255,255,255,0.15); color: white; padding: 12px; border-radius: 8px; text-decoration: none; text-align: center; font-size: 0.9rem; font-weight: 600; transition: all 0.2s;">
+        📄 Published Article
+    </a>
+</div>
             <!-- Study Overview Section -->
             <div class="dropdown-toggle">
                 <span>Study Introduction</span>
@@ -1833,9 +1845,16 @@
         
         <main class="main-content" id="main-content">
             <section class="header" id="overview">
-                <h1>EEG Group Analysis Dashboard</h1>
-                <div class="subtitle">Latent Profile Analysis & Hierarchical Clustering of EEG Data (n=144)</div>
-            </section>
+                <h1>EEG Neurosubtyping Infants Predicts Language Development</h1>
+  <div class="subtitle">Latent profile analysis of infants at risk for ASD (n=144)</div>
+    <div style="margin-top: 20px;">
+        <a href="https://doi.org/10.1007/s00702-025-03063-2" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           style="background: white; color: var(--primary-color); padding: 12px 24px; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: all 0.3s;">
+            📄 Read Full Article in Journal of Neural Transmission
+        </a>
+    </div>            </section>
 
             <!-- Executive Summary Cards -->
             <section class="viz-section" id="executive-summary">
@@ -1856,21 +1875,21 @@
                         <div class="summary-icon">📈</div>
                         <h3>Predictive of Language</h3>
                         <p class="general-content">These early brain patterns predict language skills through age 3.</p>
-                        <p class="technical-content" style="display: none;">Linear mixed-effects modeling demonstrated significant group×time interactions (F(2,284)=7.46, p<0.01) for language development between 6-36 months, with Group A showing steeper developmental slopes in expressive language (β=0.82, SE=0.09) compared to Groups B and C>
+                        <p class="technical-content" style="display: none;">Linear mixed-effects modeling demonstrated significant group×time interactions (F(2,284)=7.46, p<0.01) for language development between 6-36 months, with Group A showing steeper developmental slopes in expressive language (β=0.82, SE=0.09) compared to Groups B   and C.</p>
                     </div>
                     
                     <div class="summary-card">
                         <div class="summary-icon">👂</div>
                         <h3>Left-Side Advantage</h3>
                         <p class="general-content">Infants with stronger left-hemisphere activity showed better language outcomes.</p>
-                        <p class="technical-content" style="display: none;">Left-lateralized neural activity and enhanced left fronto-temporal connectivity was significantly associated with superior language outcomes in multivariate regression models (R²=0.64, p<0.001), supporting the developmental importance of early hemispheric specialization>
+                        <p class="technical-content" style="display: none;">Left-lateralized neural activity and enhanced left fronto-temporal connectivity was significantly associated with superior language outcomes in multivariate regression models (R²=0.64, p<0.001), supporting the developmental importance of early hemispheric specialization for language processing.</p>
                     </div>
                     
                     <div class="summary-card">
                         <div class="summary-icon">🔍</div>
                         <h3>Early Identification</h3>
                         <p class="general-content">This approach could help identify infants who might benefit from early language interventions.</p>
-                        <p class="technical-content" style="display: none;">We did no find an ASD specific phenotype, contributing to a large bodying of research suggesting early heterogeneity/p>
+                        <p class="technical-content" style="display: none;">We did not find an ASD specific phenotype, contributing to a large bodying of research suggesting early heterogeneity.</p>
                     </div>
                 </div>
                 
@@ -1933,7 +1952,7 @@
                     <div class="context-box-item">
                         <div class="context-icon">🔊</div>
                         <h3>Language Development</h3>
-                        <p>Language is one of our most important human abilities. For children with autism, speech and language difficulties are often noticed early by parents. The more severe these communication challenges are, the earlier a child typically receives an autism diagnosis.</p>
+                        <p>Language is one of our most important human abilities. For children with autism, speech and language difficulties are often one of the first concerns raised by parents. The more severe these communication challenges are, the earlier a child typically receives an autism diagnosis.</p>
                     </div>
                     
                     <div class="context-box-item">
@@ -2068,6 +2087,13 @@
                         </div>
                     </div>
                 </div>
+                                    <!-- NEW: Gender Considerations Finding -->
+                    <div class="col" style="flex: 1; min-width: 100%;">
+                        <div class="key-finding" style="margin-top: 20px;">
+                            <h4>Gender Considerations</h4>
+                            <p>Analysis revealed significant gender differences in language development, with females showing higher receptive language scores across groups (β=-0.06, p=0.029). This highlights the importance of considering sex as a variable in early neurodevelopmental research.</p>
+                        </div>
+                    </div>
             </section>
 
             <!-- Project Overview Section -->
@@ -2099,6 +2125,7 @@
                         <p>A deterministic method that builds nested clusters by merging or splitting groups based on distance metrics. HC provided a complementary approach to confirm the group structure identified through LPA.</p>
                     </div>
                 </div>
+                
             </section>
 
 
@@ -2134,6 +2161,15 @@
                             <li>Intermediate outcomes</li>
                         </ul>
                     </div>
+                </div>
+                 
+                <!-- NEW: Autism Spectrum Findings -->
+                <div class="brain-group-card" style="border-left-color: var(--accent-color); margin-top: 30px;">
+                    <h3><span class="group-indicator" style="background-color: var(--accent-color);">🧩</span>Autism Spectrum Findings</h3>
+                    <ul class="findings-list">
+                        <li><strong>No ASD-specific phenotype:</strong> Children later diagnosed with autism were distributed across all three groups (χ²=1.15, p=0.561 for LPA; p=0.974 for HC)</li>
+                        <li><strong>Clinical relevance:</strong> Findings support individualized assessment approaches rather than "one-size-fits-all" interventions for children on the spectrum</li>
+                    </ul>
                 </div>
             </section>
 
@@ -2280,17 +2316,7 @@
                 <div class="section-description">
                     Visualization of EEG profiles for each identified group, showing patterns of neurophysiological functioning.
                 </div>
-                
-                <!-- Interactive Group Comparison Controls -->
-                <div class="group-comparison-controls">
-                    <h3>Compare Groups:</h3>
-                    <div class="comparison-buttons">
-                        <button class="compare-groups-btn active" data-groups="all" data-metric="overall">All Groups</button>
-                        <button class="compare-groups-btn" data-groups="A,B" data-metric="overall">Groups A vs B</button>
-                        <button class="compare-groups-btn" data-groups="A,C" data-metric="overall">Groups A vs C</button>
-                        <button class="compare-groups-btn" data-groups="B,C" data-metric="overall">Groups B vs C</button>
-                    </div>
-                </div>
+  
                 
                 <div class="tabs">
                     <div class="tab active" data-tab="radar-plots">Radar Plots</div>
@@ -2413,7 +2439,6 @@
                 <div class="tabs">
                     <div class="tab active" data-tab="trajectories-graph">Trajectories Graph</div>
                     <div class="tab" data-tab="expressive-model">Expressive Language Model</div>
-                    <div class="tab" data-tab="receptive-model">Receptive Language Model</div>
                 </div>
                 
                 <!-- Trajectories Graph Content -->
@@ -2443,8 +2468,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                
                 
                 <!-- Receptive Language Model Content -->
                                 <div class="tab-content" id="receptive-model">                    <div class="viz-container" style="width: 100%;">                        <div class="panel-container">
@@ -2510,11 +2534,6 @@
                     </div>
 
                     <div class="insight-item">
-                        <h3>Gender Differences</h3>
-                        <p>Males showed lower receptive language scores across groups, suggesting potential gender-specific developmental patterns.</p>
-                    </div>
-
-                    <div class="insight-item">
                         <h3>Nonverbal IQ Impact</h3>
                         <p>Nonverbal cognitive abilities at 6 months strongly predicted later language skills, highlighting the interconnected nature of cognitive development.</p>
                     </div>
@@ -2549,13 +2568,22 @@
                 </div>
             </section>
 
-            <footer>
-                <div class="footer-content">
-                    <p>Early Neural and Behavioral Markers of Language Development in Infancy</p>
-                    <p>A comprehensive study of EEG measures and language development in infants</p>
-                    <p class="copyright">© 2024 All Rights Reserved</p>
-                </div>
-            </footer>
+<footer>
+    <div class="footer-content">
+        <p><strong>Published Research</strong></p>
+        <p>Blanco-Gomez, G., Wright, N., O'Reilly, C. et al. (2025). EEG neurosubtyping of infants predicts language trajectories. <em>Journal of Neural Transmission</em>.</p>
+        <p>
+            <a href="https://doi.org/10.1007/s00702-025-03063-2" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               style="color: white; text-decoration: underline; font-weight: bold;">
+                https://doi.org/10.1007/s00702-025-03063-2
+            </a>
+        </p>
+        <p style="margin-top: 20px; opacity: 0.8;">Early Neural and Behavioral Markers of Language Development in Infancy</p>
+        <p class="copyright">© 2025 All Rights Reserved</p>
+    </div>
+</footer>
         </main>
     </div>
     
